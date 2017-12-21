@@ -24,6 +24,7 @@ namespace ICT13580031EndB.Droid
 
 			var dbPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
 			dbPath = System.IO.Path.Combine(dbPath, "myShop.db3");
+			LoadApplication(new App(dbPath));
         }
     }
 }
